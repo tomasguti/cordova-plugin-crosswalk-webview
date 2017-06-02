@@ -241,11 +241,14 @@ public class XWalkWebViewEngine implements CordovaWebViewEngine {
 
     @Override
     public boolean goBack() {
+		return true;
+		/*
         if (this.webView.getNavigationHistory().canGoBack()) {
             this.webView.getNavigationHistory().navigate(XWalkNavigationHistory.Direction.BACKWARD, 1);
             return true;
         }
         return false;
+		*/
     }
 
     @Override
