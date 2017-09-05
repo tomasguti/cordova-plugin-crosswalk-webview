@@ -90,9 +90,7 @@ if (!project.hasProperty('xwalkCommandLine')) {
 }
 // Apply values after project's build-extras.gradle
 cdvPluginPostBuildExtras.add({
-    def xwalkMavenRepo = 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2';
     if (xwalkMode == LITE_MODE) {
-        xwalkMavenRepo = 'https://download.01.org/crosswalk/releases/crosswalk-lite/android/maven2';
     }
     repositories {
       maven {
