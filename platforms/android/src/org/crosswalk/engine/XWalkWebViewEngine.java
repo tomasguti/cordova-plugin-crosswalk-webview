@@ -90,7 +90,7 @@ public class XWalkWebViewEngine implements CordovaWebViewEngine {
 
                 initWebViewSettings();
                 exposeJsInterface(webView, bridge);
-                loadExtensions();
+                // loadExtensions();
 
                 CordovaPlugin notifPlugin = new CordovaPlugin() {
                     @Override
